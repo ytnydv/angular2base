@@ -331,6 +331,8 @@ import * as _ from 'lodash';
  * change `c:\[path to angular2-webpack-starter]` to `C:\[path to angular2-webpack-starter]` see [926#issuecomment-245223547](https://github.com/AngularClass/angular2-webpack-starter/issues/926#issuecomment-245223547)
 
 # Deployment
+For deploy use content from dist and DONOT Forget to Remove from index.html
+<base href="/">
 
 ## Netlify
 
