@@ -332,7 +332,9 @@ import * as _ from 'lodash';
 
 # Deployment
 For deploy use content from dist and DONOT Forget to Remove from index.html
+```
 <base href="/">
+```
 
 ## Netlify
 
