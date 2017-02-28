@@ -40,6 +40,10 @@ import { AppState } from './app.service';
         routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
         About
       </a>
+      <a [routerLink]=" ['./aboutme'] "
+        routerLinkActive="active" [routerLinkActiveOptions]= "{exact: true}">
+        About Me
+      </a>
     </nav>
 
     <main>
@@ -49,11 +53,9 @@ import { AppState } from './app.service';
     <pre class="app-state">this.appState.state = {{ appState.state | json }}</pre>
 
     <footer>
-      <span>WebPack Angular 2 Starter by <a [href]="url">@AngularClass</a></span>
+      <span>WebPack Angular 2 Starter</span>
       <div>
-        <a [href]="url">
-          <img [src]="angularclassLogo" width="25%">
-        </a>
+        Footer Links Goes Here
       </div>
     </footer>
   `
@@ -61,7 +63,7 @@ import { AppState } from './app.service';
 export class AppComponent implements OnInit {
   public angularclassLogo = 'assets/img/angularclass-avatar.png';
   public name = 'Angular 2 Webpack Starter RARAR';
-  public url = 'https://twitter.com/AngularClass';
+  public url = 'https://twitter.com/';
 
   constructor(
     public appState: AppState
@@ -72,11 +74,3 @@ export class AppComponent implements OnInit {
   }
 
 }
-
-/*
- * Please review the https://github.com/AngularClass/angular2-examples/ repo for
- * more angular app examples that you may copy/paste
- * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
- * For help or questions please contact us at @AngularClass on twitter
- * or our chat on Slack at https://AngularClass.com/slack-join
- */
